@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Oil & Gas Mx</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+.bdcol{background-color: white;}
+.bdcol2{background-color: darkslateblue; color:white}
+.bdcol3{background-color: whitesmoke;}
+.width{width: 10%;}
+.height{height:220px;}
+
+
+</style>
+
+<body class="bdcol">
+
+  <div class="container bdcol3">
+    <div class="row">
+      <div class="col-md-12 jumbotron bdcol2 height" >
+        <div class="dropdown text-dark">
+            <button class="btn-sm btn-secondary textcolor dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Menu
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Visualization 1</button>
+              <button class="dropdown-item" type="button">Visualization 2</button>
+              <button class="dropdown-item" type="button">Visualization 3</button>
+            </div>
+          </div>
+          <div class= "text-center">
+        <h1>Oil & Gas Industry in Mexico</h1>
+        <p>Dashboard for visualizing historical data of the industry in Mexico</p>
+    </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class=" col-md-8 panel panel-bdcol2">
+        <div class="panel-heading bdcol2">
+          <h3 class="panel-title text-center">Proyect Explanation</h3>
+        </div>
+        <div class="panel-body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus ratione consectetur tempora facilis corrupti! ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolor veritatis autem cumque incidunt magni nostrum commodi voluptatem totam perferendis?.</p></div>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+    <div class="row bdcol2 text-center"><h4>Chart for entity</h4></div>
+    <div class="row "><h4></h4></div>
+
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="well-sm col-md-2">
+        <h5>Select entity:</h5>
+        <select id="selectOption" onchange="optionChanged(this.value)"></select>
+      </div>
+      <div class="col-md-4">
+        <div id="bar_chart"></div>
+      </div>
+    </div>
+
+    <div class="row "><h4></h4></div>
+    <div class="row bdcol2 text-center"><h4>Stations for the selected entity</h4></div>
+    <div class="row "><h4></h4></div>
+ 
+    <div class="col-md-6 .width text-center">
+      <div id="bubble_plot"></div>
+      <div class="col-md-2"></div>
+    </div>
+    <div class="row"><h3></h3></div>
+  </div>
+
+   
+   
+ 
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
